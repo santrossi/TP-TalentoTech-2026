@@ -11,10 +11,16 @@ html {
   font-size: 62.5%;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                      fondo claro background: #d1ffbc
+                          color letras oscuras: #033902
+                       background-color oscuro: rgb(132, 161, 111)                      */
+/* -------------------------------------------------------------------------- */
+
 body {
   font-family: "Old Standard TT", sans-serif;
   font-size: 1.6rem;
-  background: #d1ffbc;
+  background: rgb(132, 161, 111);
   color: #033902;
 
   display: flex;
@@ -23,13 +29,20 @@ body {
 }
 
 main {
-  width: 70%;
-  margin: auto;
+  background-color: #d1ffbc;
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1;
+}
+
+.main-landing,
+.web-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0% 12%;
 }
 
 footer {
