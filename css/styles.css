@@ -38,7 +38,8 @@ main {
 }
 
 .main-landing,
-.web-content {
+.web-content,
+.landing-contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,7 +143,7 @@ h2 {
 .btn {
   border-radius: 3rem;
   display: inline-block;
-  cursor: grab;
+  cursor: pointer;
   font-family: Arial;
   font-size: 1.6rem;
   padding: 1.6rem 3rem;
@@ -186,6 +187,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2 rem;
 }
 
 .form-consulta {
@@ -198,21 +200,29 @@ h2 {
   max-width: 30rem;
   background: rgb(132, 161, 111);
   color: #033902;
-  border-radius: 25rem;
+  border-radius: 5rem;
 }
 
 .form-inputs {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 1rem;
   font-weight: bolder;
+  gap: 0.5rem;
 }
 
 .form-inputs input,
 .form-inputs textarea {
   border: none;
+  background-color: #e7ffdb;
   border-bottom: solid 2px •#2a1e35;
   margin-bottom: 3rem;
+  border-radius: 0.5rem;
+}
+
+.form-inputs input {
+  min-height: 2rem;
 }
 
 .form-inputs textarea {
@@ -232,12 +242,19 @@ h2 {
   }
 
   .main-landing,
-  .web-content {
+  .web-content .landing-contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0% 10%;
   }
+
+  .landing-contacto {
+    display: flex;
+    margin: 0% 20%;
+    padding-bottom: 9rem;
+  }
+
   .card {
     margin: 1.5rem;
     padding: 2rem;
